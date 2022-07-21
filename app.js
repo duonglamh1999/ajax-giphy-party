@@ -17,7 +17,7 @@ $form.on('submit', async function(e){
 })
 
 function getGifData(searchTerm){
-   const response = axios.get("https://api.giphy.com/v1/gifs/search",{params:{q:searchTerm,
+   const response = axios.get("//api.giphy.com/v1/gifs/search",{params:{q:searchTerm,
     api_key:'MhAodEJIJxQMxW9XqxKjyXfNYdLoOIym'}})
     return response
 }
