@@ -6,8 +6,13 @@ const $deleteBtn = $('#delete');
 $form.on('submit', async function(e){
     e.preventDefault();
     const searchTerm  = $searchInput.val()
+    try {
     const response = await getGifData(searchTerm);
     makeNewDiv(response)
+    }
+    catch(e){
+        alert('bad input try another one buddy')
+    }
     $searchInput.val("");
 })
 
