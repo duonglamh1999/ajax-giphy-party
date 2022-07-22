@@ -1,9 +1,9 @@
 const $gifContainer = $('.gif_section_container');
 const $searchInput = $('#form_input');
-const $form = $('form');
+const $searchBtn = $('#search');
 const $deleteBtn = $('#delete');
 
-$form.on('submit', async function(e){
+$searchBtn.on('click', async function(e){
     e.preventDefault();
     const searchTerm  = $searchInput.val()
     try {
